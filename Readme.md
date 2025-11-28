@@ -13,8 +13,8 @@ Starter code sudah disediakan sehingga peserta tinggal melanjutkan fitur-fitur i
 ### 1. Clone Repository
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/StreamLine-18/React-Starter
+cd React-Starter
 ```
 
 ### 2. Pilih Starter Sesuai Tema
