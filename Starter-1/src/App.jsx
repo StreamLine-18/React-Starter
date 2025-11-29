@@ -38,6 +38,27 @@ const MENU_ITEMS = [
     category: "Minuman", 
     image: "https://blog.alfagift.id/wp-content/uploads/2025/08/1.-Resep-Kopi-Susu-Gula-Aren-yang-Praktis-Freepik-valeria_aksakova.webp" 
   },
+  { 
+    id: 6, 
+    name: "Nasi Goreng Sunda", 
+    price: 18000, 
+    category: "Makanan", 
+    image: "https://image.idntimes.com/post/20220209/ngj-5b357a9ad6d7e0b737452134183791d2-d1f6d26cde8b319731658207d32e0cde.jpg" 
+  },
+  { 
+    id: 7, 
+    name: "Pisang Goreng Keju", 
+    price: 15000, 
+    category: "Snack", 
+    image: "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e28bad14-5565-4b21-90b5-8c0e70530663_Go-Biz_20240217_081039.jpeg"
+  }
+  , {
+    id: 8, 
+    name: "Coto Makassar", 
+    price: 22000, 
+    category: "Snack", 
+    image: "https://asset.kompas.com/crops/zAJSjgJEPVVmDrApNrdSlNxzRvo=/138x48:936x580/1200x800/data/photo/2024/03/17/65f6c7ff27351.jpg"
+  }
 ];
 
 const KantinOnline = () => {
@@ -77,7 +98,7 @@ const KantinOnline = () => {
             <div>
               <h1 className={`text-3xl font-bold transition-colors ${
                 darkMode ? 'text-white' : 'text-slate-800'
-              }`}>Kantin Online 🍔</h1>
+              }`}>Kantin Online</h1>
               <p className={`transition-colors ${
                 darkMode ? 'text-slate-400' : 'text-slate-500'
               }`}>Pilih menu makan siangmu!</p>
@@ -106,8 +127,8 @@ const KantinOnline = () => {
               key={item.id}
               className={`border-2 rounded-2xl overflow-hidden transition-all ${
                 darkMode
-                  ? 'border-slate-700 hover:border-orange-400 bg-slate-800'
-                  : 'border-slate-200 hover:border-orange-300 bg-white'
+                  ? 'border-slate-700 hover:border-slate-400 bg-slate-800'
+                  : 'border-slate-200 hover:border-orange-500 bg-white'
               } hover:shadow-lg`}
             >
               {/* GAMBAR */}
@@ -127,7 +148,7 @@ const KantinOnline = () => {
                 
                 <span className={`text-xs px-3 py-1 rounded-full inline-block transition-colors mb-3 ${
                   darkMode
-                    ? 'bg-orange-900 text-orange-300'
+                    ? 'bg-orange-900 text-amber-200'
                     : 'bg-orange-100 text-orange-600'
                 }`}>
                   {item.category}
@@ -277,7 +298,7 @@ const KantinOnline = () => {
       {/* OVERLAY */}
       {sidebarOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          className="fixed inset-0 backdrop-blur-md bg-opacity-50 z-40"
           onClick={() => setSidebarOpen(false)}
         />
       )}
